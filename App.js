@@ -25,6 +25,11 @@
         let yildiz = "* ".repeat(n - i);
         console.log(bosluk + yildiz);
     }
+
+
+    if(5=5){
+        console.log(öyle)
+    }
     
     
     

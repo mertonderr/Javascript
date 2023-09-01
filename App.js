@@ -48,5 +48,22 @@ for(let i=1;i<=height;i++){
     shape += line + '\n'
 }
 document.getElementById('shape').textContent = shape;
+
+function yildizDeseni(boyut) {
+    for (let i = 0; i < boyut * 2 - 1; i++) {
+      let satir = '';
+      for (let j = 0; j < boyut * 2 - 1; j++) {
+        if (j >= i && j < boyut * 2 - 1 - i) {
+          satir += '* ';
+        } else {
+          satir += '  ';
+        }
+      }
+      console.log(satir);
+    }
+  }
+  
+  yildizDeseni(5); // 5 satır ve 5 sütunlu bir yıldız deseni
+  
     
     

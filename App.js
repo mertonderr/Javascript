@@ -29,6 +29,13 @@
 
 
 
+    
+//      *
+//     * *
+//    *   *
+//   *     *
+//  *********
+
 let shape = '';
 for(let i=1;i<=height;i++){
     let line = ' '.repeat(height - i)

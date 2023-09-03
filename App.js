@@ -64,6 +64,16 @@ function yildizDeseni(boyut) {
   }
   
   yildizDeseni(5); // 5 satır ve 5 sütunlu bir yıldız deseni
+
+  function yildizDeseni(boyut) {
+    for (let i = 0; i < boyut; i++) {
+      let bosluklar = ' '.repeat(i);
+      let yildizler = '*'.repeat(boyut - i);
+      console.log(bosluklar + yildizler);
+    }
+  }
+  
+  yildizDeseni(5); // Bu örnekte 5 satırlık bir yıldız deseni oluşturuyoruz.
   
     
     

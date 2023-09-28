@@ -84,5 +84,15 @@ const n = 5; // İstediğiniz satır sayısı
     }
     console.log(row);
   }
+
+
+ // Kullanıcıdan bir ürünün adını ve fiyatını alın, ardından bu ürünün KDV'li fiyatını hesaplayın ve gösterin.
+
+ var urunAdi = prompt("Ürün adını girin:");
+var urunFiyati = parseFloat(prompt("Ürün fiyatını girin:"));
+var kdvOrani = 0.18; // %18 KDV
+var kdvliFiyat = urunFiyati * (1 + kdvOrani);
+console.log(urunAdi + " adlı ürünün KDV'li fiyatı: " + kdvliFiyat);
+
   
     

@@ -63,7 +63,7 @@ function yildizDeseni(boyut) {
     }
   }
   
-  yildizDeseni(5); // 5 satır ve 5 sütunlu bir yıldız deseni
+ // yildizDeseni(5); // 5 satır ve 5 sütunlu bir yıldız deseni
 
   function yildizDeseni(boyut) {
     for (let i = 0; i < boyut; i++) {
@@ -73,7 +73,7 @@ function yildizDeseni(boyut) {
     }
   }
   
-  yildizDeseni(5); // Bu örnekte 5 satırlık bir yıldız deseni oluşturuyoruz.
+ yildizDeseni(5); // Bu örnekte 5 satırlık bir yıldız deseni oluşturuyoruz.
   
 const n = 5; // İstediğiniz satır sayısı
 
@@ -86,13 +86,43 @@ const n = 5; // İstediğiniz satır sayısı
   }
 
 
- // Kullanıcıdan bir ürünün adını ve fiyatını alın, ardından bu ürünün KDV'li fiyatını hesaplayın ve gösterin.
+// Kullanıcıdan bir ürünün adını ve fiyatını alın, ardından bu ürünün KDV'li fiyatını hesaplayın ve gösterin.
 
- var urunAdi = prompt("Ürün adını girin:");
-var urunFiyati = parseFloat(prompt("Ürün fiyatını girin:"));
-var kdvOrani = 0.18; // %18 KDV
-var kdvliFiyat = urunFiyati * (1 + kdvOrani);
-console.log(urunAdi + " adlı ürünün KDV'li fiyatı: " + kdvliFiyat);
+  var urunAdi = prompt("Ürün adını girin:"); 
+  var urunFiyati = parseFloat(prompt("Ürün fiyatını girin:"));
+  var kdvOrani = 0.18; // %18 KDV
+  var kdvliFiyat = urunFiyati * (1 + kdvOrani);
+  console.log(urunAdi + " adlı ürünün KDV'li fiyatı: " + kdvliFiyat); 
+
+
+   //   1
+  //   212
+  //  32123
+ //  4321234
+
+
+function printPattern(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let pattern = '';
+
+    for (let j = 1; j <= rows - i; j++) {
+      pattern += ' ';
+    }
+
+    for (let k = i; k >= 1; k--) {
+      pattern += k;
+    }
+
+    for (let l = 2; l <= i; l++) {
+      pattern += l;
+    }
+
+    console.log(pattern);
+  }
+}
+
+printPattern(4);
+
 
   
     

@@ -144,5 +144,63 @@ function drawPattern() {
 }
 
 drawPattern();
+
+
+//     1
+//    212
+//   32123
+//  4321234
+//   32123
+//    212
+//     1
+
+function numbers(height){
+  for(let i=1; i<=height; i++){
+    let row = '' ;
+
+    for(let j = 1;j <= height - i;j++){
+      row += ' ';
+    }
+    // Artan sayılar
+
+    for(let k = i; k >=1 ;k--){
+      row += k;
+    }
+    for(let l = 2;l<=i; l++){
+      row += l;
+    }
+    console.log(row)
+  }
+}
+
+function numbersPattern(height){
+  numbers(height);
+  numbersReverse(height - 1)
+}
+
+function numbersReverse(height) {
+  for (let i = height; i >= 1; i--) {
+    let row = '';
+
+    // Sol boşlukları ekleyin
+    for (let j = 1; j <= height - i; j++) {
+      row += ' ';
+    }
+
+    // Artan sayıları ekleyin
+    for (let k = i; k >= 1; k--) {
+      row += k;
+    }
+
+    // Azalan sayıları ekleyin
+    for (let l = 2; l <= i; l++) {
+      row += l;
+    }
+
+    console.log(row);
+  }
+}
+
+numbersPattern(4);
   
     

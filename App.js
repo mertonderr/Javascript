@@ -88,11 +88,11 @@ const n = 5; // İstediğiniz satır sayısı
 
 // Kullanıcıdan bir ürünün adını ve fiyatını alın, ardından bu ürünün KDV'li fiyatını hesaplayın ve gösterin.
 
-  var urunAdi = prompt("Ürün adını girin:"); 
-  var urunFiyati = parseFloat(prompt("Ürün fiyatını girin:"));
-  var kdvOrani = 0.18; // %18 KDV
-  var kdvliFiyat = urunFiyati * (1 + kdvOrani);
-  console.log(urunAdi + " adlı ürünün KDV'li fiyatı: " + kdvliFiyat); 
+  // var urunAdi = prompt("Ürün adını girin:"); 
+  // var urunFiyati = parseFloat(prompt("Ürün fiyatını girin:"));
+  // var kdvOrani = 0.18; // %18 KDV
+  // var kdvliFiyat = urunFiyati * (1 + kdvOrani);
+  // console.log(urunAdi + " adlı ürünün KDV'li fiyatı: " + kdvliFiyat); 
 
 
    //   1
@@ -101,28 +101,48 @@ const n = 5; // İstediğiniz satır sayısı
  //  4321234
 
 
-function printPattern(rows) {
-  for (let i = 1; i <= rows; i++) {
-    let pattern = '';
+// function printPattern(rows) {
+//   for (let i = 1; i <= rows; i++) {
+//     let pattern = '';
 
-    for (let j = 1; j <= rows - i; j++) {
-      pattern += ' ';
+//     for (let j = 1; j <= rows - i; j++) {
+//       pattern += ' ';
+//     }
+
+//     for (let k = i; k >= 1; k--) {
+//       pattern += k;
+//     }
+
+//     for (let l = 2; l <= i; l++) {
+//       pattern += l;
+//     }
+
+//     console.log(pattern);
+//   }
+// }
+
+// printPattern(4);
+
+
+
+function drawPattern() {
+  const patternSize = 5; // Desenin boyutunu ayarlayabilirsiniz
+
+  for (let i = 0; i < patternSize; i++) {
+    let row = '';
+    
+    for (let j = 0; j < patternSize; j++) {
+      if (i === 0 || i === patternSize - 1 || j === 0 || j === patternSize - 1) {
+        row += '*';
+      } else {
+        row += ' ';
+      }
     }
-
-    for (let k = i; k >= 1; k--) {
-      pattern += k;
-    }
-
-    for (let l = 2; l <= i; l++) {
-      pattern += l;
-    }
-
-    console.log(pattern);
+    
+    console.log(row);
   }
 }
 
-printPattern(4);
-
-
+drawPattern();
   
     

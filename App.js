@@ -240,5 +240,24 @@ numbersPattern(4);
     
     const height = 5; 
     desen(height);
-  
+
+  // Kullanıcının girdiği iki sayının en büyük ortak bölenini (EBOB) hesaplayan JavaScript kodu:
+
+let num1 = parseInt(prompt("Birinci sayıyı girin:"));
+let num2 = parseInt(prompt("İkinci sayıyı girin:"));
+
+// EBOB hesaplama işlemi
+function ebobHesapla(a, b) {
+    while (b !== 0) {
+        let gecici = b;
+        b = a % b;
+        a = gecici;
+    }
+    return a;
+}
+
+// Sonucu ekrana yazdırın
+let ebob = ebobHesapla(num1, num2);
+console.log(`EBOB(${num1}, ${num2}) = ${ebob}`);
+
     

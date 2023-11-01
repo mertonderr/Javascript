@@ -101,7 +101,7 @@ const n = 5; // İstediğiniz satır sayısı
  //  4321234
 
 
-// function printPattern(rows) {
+//  function printPattern(rows) {
 //   for (let i = 1; i <= rows; i++) {
 //     let pattern = '';
 

@@ -204,6 +204,7 @@ function numbersReverse(height) {
 numbersPattern(4);
 
 
+
     //      *
     //     * *
     //    * * *
@@ -260,4 +261,17 @@ function ebobHesapla(a, b) {
 let ebob = ebobHesapla(num1, num2);
 console.log(`EBOB(${num1}, ${num2}) = ${ebob}`);
 
-    
+
+// Asal sayıları bulma
+for(let i=1;i<=25;i++){
+  let prime = i > 1
+  for(let j=2;j<=Math.sqrt(i);j++){
+      if(i%j==0){
+          prime = false
+          break
+      }
+  }
+  if(prime){
+      console.log(i,"sayınız asal")
+  }
+}   

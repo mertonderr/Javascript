@@ -88,11 +88,11 @@ const n = 5; // İstediğiniz satır sayısı
 
 // Kullanıcıdan bir ürünün adını ve fiyatını alın, ardından bu ürünün KDV'li fiyatını hesaplayın ve gösterin.
 
-  // var urunAdi = prompt("Ürün adını girin:"); 
-  // var urunFiyati = parseFloat(prompt("Ürün fiyatını girin:"));
-  // var kdvOrani = 0.18; // %18 KDV
-  // var kdvliFiyat = urunFiyati * (1 + kdvOrani);
-  // console.log(urunAdi + " adlı ürünün KDV'li fiyatı: " + kdvliFiyat); 
+  var urunAdi = prompt("Ürün adını girin:"); 
+  var urunFiyati = parseFloat(prompt("Ürün fiyatını girin:"));
+  var kdvOrani = 0.18; // %18 KDV
+  var kdvliFiyat = urunFiyati * (1 + kdvOrani);
+  console.log(urunAdi + " adlı ürünün KDV'li fiyatı: " + kdvliFiyat); 
 
 
    //   1
@@ -101,27 +101,27 @@ const n = 5; // İstediğiniz satır sayısı
  //  4321234
 
 
-//  function printPattern(rows) {
-//   for (let i = 1; i <= rows; i++) {
-//     let pattern = '';
+ function printPattern(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let pattern = '';
 
-//     for (let j = 1; j <= rows - i; j++) {
-//       pattern += ' ';
-//     }
+    for (let j = 1; j <= rows - i; j++) {
+      pattern += ' ';
+    }
 
-//     for (let k = i; k >= 1; k--) {
-//       pattern += k;
-//     }
+    for (let k = i; k >= 1; k--) {
+      pattern += k;
+    }
 
-//     for (let l = 2; l <= i; l++) {
-//       pattern += l;
-//     }
+    for (let l = 2; l <= i; l++) {
+      pattern += l;
+    }
 
-//     console.log(pattern);
-//   }
-// }
+    console.log(pattern);
+  }
+}
 
-// printPattern(4);
+printPattern(4);
 
 
 
@@ -203,8 +203,6 @@ function numbersReverse(height) {
 
 numbersPattern(4);
 
-
-
     //      *
     //     * *
     //    * * *
@@ -242,7 +240,7 @@ numbersPattern(4);
     const height = 5; 
     desen(height);
 
-  // Kullanıcının girdiği iki sayının en büyük ortak bölenini (EBOB) hesaplayan JavaScript kodu:
+// Kullanıcının girdiği iki sayının en büyük ortak bölenini (EBOB) hesaplayan JavaScript kodu:
 
 let num1 = parseInt(prompt("Birinci sayıyı girin:"));
 let num2 = parseInt(prompt("İkinci sayıyı girin:"));
@@ -275,3 +273,14 @@ for(let i=1;i<=25;i++){
       console.log(i,"sayınız asal")
   }
 }   
+
+
+ // Bir dizi içindeki çift sayıları bulan ve bu sayıları yeni bir diziye ekleyen bir fonksiyon
+ function ciftSayilarBulma(dizi) {
+  return ciftSayilar;
+}
+var sayilar = [3, 8, 12, 5, 10, 7, 22, 15];
+var ciftSayilarSonuc = ciftSayilariBulma(sayilar);
+
+console.log("Orjinal Sayılar: " + sayilar);
+console.log("Çift Sayılar: " + ciftSayilarSonuc);
